@@ -1,0 +1,14 @@
+<h2>Your Cart</h2>
+
+<% @cart_items.each do |item| %>
+  <p>
+    <%= item[:product].name %> x <%= item[:quantity] %> = KES <%= item[:product].price * item[:quantity] %>
+    <%= button_to "Remove", cart_item_path(item[:product]), method: :delete %>
+  </p>
+<% end %>
+
+<p><strong>Total:</strong> KES <%= @total %></p>
+
+<%= form_with url: new_order_path, method: :get do %>
+  <%= submit_tag "Proceed to Checkout" %>
+<% end %>
