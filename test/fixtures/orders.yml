@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  phone_number: MyString
+  total_amount: 1
+  status: MyString
+  checkout_request_id: MyString
+  receipt: MyString
+
+two:
+  phone_number: MyString
+  total_amount: 1
+  status: MyString
+  checkout_request_id: MyString
+  receipt: MyString
